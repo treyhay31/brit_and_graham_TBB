@@ -1,5 +1,6 @@
 <script>
   import bottom from './assets/bottom_greenery.png'
+  import top from './assets/greenery.png'
   import OnTap from './lib/OnTap.svelte'
   import OnTheMenu from './lib/OnTheMenu.svelte'
   import SeatingArrangement from './lib/SeatingArrangement.svelte'
@@ -41,14 +42,11 @@
   }
   
   main {
-    padding: 1em;
-    margin: 4rem auto;
+    padding: 5rem 5vw;
     color: var(--color-font);
-    /*
+    max-width: 90vw; 
     display: grid;
-    place-items: center;
-    place-content: center; 
-    */
+    justify-items: center;
   }
 
   img {
@@ -60,23 +58,9 @@
   img.flip {
     transform: rotate(180deg);
   }
-  
-  @font-face {
-      font-family: 'Calinastiya';
-      font-style: normal;
-      font-weight: 400;
-      src: url('/fonts/Calinastiya.ttf') format('truetype');
-  }
-
-  @font-face {
-      font-family: 'Hello';
-      font-style: normal;
-      font-weight: 400;
-      src: url('/fonts/Hello.ttf') format('truetype');
-  }
 
   h1,h2,h3,h4,h5,h6 {
-    font-family: 'Hello';
+    font-family: 'Petit Formal Script', cursive;
     font-weight: 400;
     font-size: 2rem;
   }

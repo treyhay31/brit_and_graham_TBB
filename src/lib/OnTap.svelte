@@ -76,12 +76,11 @@
   section {
     display: grid;
     grid-gap: 0.75rem;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .drink {
-    max-height: 10rem;
-    max-width: 10rem;
+    min-width: 10rem;
     background: linear-gradient(17deg, #5bca5b22, #8ffc8f55);
     border-radius: 7px;
     padding: 1.5rem;
@@ -115,7 +114,7 @@
   }
 
   h3 {
-    font-family: 'Hello';
+    font-family: 'Petit Formal Script', cursive;
     font-size: 2.5rem;
     font-weight: 100;
     line-height: 1rem;
@@ -130,6 +129,7 @@
     line-height: 0.2rem;
     padding: 0.8rem 0;
     font-style: italic;
+    font-size: 0.88rem;
   }
 
   img {
