@@ -4,10 +4,11 @@
   import OnTap from './lib/OnTap.svelte'
   import OnTheMenu from './lib/OnTheMenu.svelte'
   import SeatingArrangement from './lib/SeatingArrangement.svelte'
+  import './assets/DancingScript.woff'
 </script>
 
 <main>
-  <h1>Now that the BIG stuff is taken care of...</h1>
+  <h1>Brittany and Graham</h1>
   <p class="tidbit">(They're married)</p>
 
   <h2>What's on tap?</h2>
@@ -26,7 +27,7 @@
   <p>
     Where does something this unique and creative come from, you ask?
     Mostly from the bride and groom but the execution is provided by 
-    their very own Bridez Boiz.
+    their very own Bridez BoizZzZzZzZZzzz.
   </p>
 
   <img class="flip" src={bottom} alt="Wedding greenery" />
@@ -40,6 +41,12 @@
     --color-main: darkgreen;
     --color-font: #333333;
   }
+  @font-face {
+  font-family: "DancingScript";
+  src: local("DancingScript"),
+    url("./assets/DancingScript.woff") format("truetype");
+  font-weight: normal;
+    }
   
   main {
     padding: 5rem 5vw;
@@ -54,13 +61,13 @@
     width: 14rem;
     margin: 2rem auto;
   }
-  
+   
   img.flip {
     transform: rotate(180deg);
   }
 
   h1,h2,h3,h4,h5,h6 {
-    font-family: 'Petit Formal Script', cursive;
+    font-family: 'DancingScript', cursive;
     font-weight: 400;
     font-size: 2rem;
   }

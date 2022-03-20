@@ -42,18 +42,18 @@
       ingredients: ["Water", "Iced Tea", "Coffee"],
       image: drink,
     }, 
-    {
-      owner: "Food",
-      title: "Appetizers On The Move",
-      ingredients: ["Chicken Salad", "Pimento Cheese", "Ham & Cheese"],
-      image: food,
-    }, 
-    {
-      owner: "Food",
-      title: "Appetizers On The Table",
-      ingredients: ["Cheese", "Charcuterie", "Mixed Fruits"],
-      image: food,
-    },
+    // {
+    //   owner: "Food",
+    //   title: "Appetizers On The Move",
+    //   ingredients: ["Chicken Salad", "Pimento Cheese", "Ham & Cheese"],
+    //   image: food,
+    // }, 
+    // {
+    //   owner: "Food",
+    //   title: "Appetizers On The Table",
+    //   ingredients: ["Cheese", "Charcuterie", "Mixed Fruits"],
+    //   image: food,
+    // },
   ]
 </script>
 

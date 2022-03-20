@@ -1,0 +1,5 @@
+I was messing with the background image to figure out why it was so zoomed in.
+
+The image scales with the length of the page. IDK what looks best but we should make it look legit. (We can still keep the funny ABOUT section.)
+
+I had an idea, we should these different libs be different tabs, showing only one at a time. First landing page can show big title cards for the section, as well as a nav bar to switch between. Is this too much work? I've done this with my for fun websties but not sure what you wanted to do. you are the dev lead after all
