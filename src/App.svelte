@@ -1,38 +1,54 @@
 <script>
-  import bottom from './assets/bottom_greenery.png'
-  import top from './assets/greenery.png'
-  import OnTap from './lib/OnTap.svelte'
-  import OnTheMenu from './lib/OnTheMenu.svelte'
-  import SeatingArrangement from './lib/SeatingArrangement.svelte'
-  import './assets/DancingScript.woff'
+  import bottom from './assets/bottom_greenery.png';
+  import top from './assets/greenery.png';
+  import MainNav from './lib/MainNav.svelte';
+  import OnTap from './lib/OnTap.svelte';
+  import OnTheMenu from './lib/OnTheMenu.svelte';
+  import SeatingArrangement from './lib/SeatingArrangement.svelte';
+  import './assets/DancingScript.woff';
+  import { Router, Route, Link } from "svelte-navigator";
 </script>
 
-<main>
-  <h1>Brittany and Graham</h1>
-  <p class="tidbit">(They're married)</p>
+<Router>
 
-  <h2>What's on tap?</h2>
-  <OnTap />
-  <img src={bottom} alt="Wedding greenery" />
-
-  <h2>What's on the menu?</h2>
-  <OnTheMenu />
-  <img src={bottom} alt="Wedding greenery" />
-
-  <h2>Where do I sit?</h2>
-  <SeatingArrangement />
-  <img src={bottom} alt="Wedding greenery" />
+  <nav>
+    <Link to="/MainNav">Home</Link>
+    <Link to="/OnTap">On Tap</Link>
+    <Link to="/OnTheMenu">On The Menu</Link>
+    <Link to="/SeatingArrangement">Seating Arrangement</Link>
+  </nav>
   
-  <h2>The Boiz</h2>
-  <p>
-    Where does something this unique and creative come from, you ask?
-    Mostly from the bride and groom but the execution is provided by 
-    their very own Bridez BoizZzZzZzZZzzz.
-  </p>
+  <main>
+    <h1>Brittany and Graham</h1>
+    <p class="tidbit">(They're married)</p>
+    <img src={bottom} alt="Wedding greenery" />
 
-  <img class="flip" src={bottom} alt="Wedding greenery" />
+    <MainNav/>
+  
+<!--     <h2>What's on tap?</h2>
+    <OnTap />
+    <img src={bottom} alt="Wedding greenery" />
+  
+    <h2>What's on the menu?</h2>
+    <OnTheMenu />
+    <img src={bottom} alt="Wedding greenery" />
+  
+    <h2>Where do I sit?</h2>
+    <SeatingArrangement />
+    <img src={bottom} alt="Wedding greenery" /> -->
+    
+    <img class="flip" src={bottom} alt="Wedding greenery" />
+    <h2>The Boiz</h2>
+    <p>
+      Where does something this unique and creative come from, you ask?
+      Mostly from the bride and groom but the execution is provided by 
+      their very own Bridez BoizZzZzZzZZzzz. (Trey, Christian and honorary mention       Bryn)
+    </p>
+  
+<!--     <img class="flip" src={bottom} alt="Wedding greenery" /> -->
 
-</main>
+  </main>
+</Router>
 
 <style>
   :root {
@@ -94,6 +110,10 @@
 
   .tidbit {
     font-size: 0.7rem;
+  }
+
+  .mainNav {
+    text-decoration: none !important;
   }
 
   @media (min-width: 480px) {

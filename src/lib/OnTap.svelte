@@ -4,6 +4,7 @@
   import food from './../assets/food.svg'
   import wine from './../assets/wine.svg'
   import cocktail from './../assets/cocktail.svg'
+  import bottom from './../assets/bottom_greenery.png';
   
   const drinks = [
     {
@@ -70,6 +71,7 @@
     </ul>
   </div>
   {/each}
+  <img class="greenery" src={bottom} alt="Wedding greenery" />
 </section>
 
 <style>
@@ -77,6 +79,12 @@
     display: grid;
     grid-gap: 0.75rem;
     grid-template-columns: 1fr;
+  }
+  
+  .greenery {
+    height: 4rem;
+    width: 14rem !important;
+    margin: 2rem auto;
   }
 
   .drink {

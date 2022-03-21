@@ -1,9 +1,7 @@
 <script>
-// import beer from './../assets/beer.svg'
-// import drink from './../assets/drink.svg'
-import food from './../assets/food.svg'
-// import wine from './../assets/wine.svg'
-// import cocktail from './../assets/cocktail.svg'
+  import food from './../assets/food.svg'
+  import bottom from './../assets/bottom_greenery.png';
+
   let count = 0
   const increment = () => {
     count += 1
@@ -61,6 +59,7 @@ import food from './../assets/food.svg'
     </ul>
   </div>
   {/each}
+  <img class="greenery" src={bottom} alt="Wedding greenery" />
 </section>
 
 <style>
@@ -105,7 +104,12 @@ import food from './../assets/food.svg'
     border-bottom: 1px solid #33333333;
   }
 
-
+  .greenery {
+    height: 4rem;
+    width: 14rem !important;
+    margin: 2rem auto;
+  }
+  
   h3 {
     font-family: 'DancingScript', cursive;
     font-size: 2.5rem;
