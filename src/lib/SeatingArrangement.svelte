@@ -10,45 +10,15 @@
         input === "") {
       return parsedPeople
     }
-    const results = parsedPeople.filter(p => 
-      p.name.toLowerCase().startsWith(input) || 
-      p.table.toLowerCase().startsWith(input))
+    if (isNaN(input)) {
+      const i = input.toLowerCase()
+      return parsedPeople.filter(p => 
+        p.first.toLowerCase().startsWith(i) || 
+        p.last.toLowerCase().startsWith(i) ||
+        p.table.toLowerCase().startsWith(i))
+    }
 
-    console.log(`results with input: ${input}`, results)
-
-    return results
-  }
-  
-  const sortName = () => {
-    parsedPeople.sort((personA, personB) => {
-      if (personA.name > personB.name) return 1;
-      if (personA.name < personB.name) return -1;
-      return 0;
-    })
-  }
-
-  const sortTable = () => {
-    parsedPeople.sort((personA, personB) => {
-      if (personA.table > personB.table) return 1;
-      if (personA.table < personB.table) return -1;
-      return 0;
-    })
-  }
-
-  let isTableShown = false;
-  let peopleAtTheTable = []
-  const showTable = (tableNumber) => {
-    console.log(`TableNumber: ${tableNumber}`)
-    isTableShown = true
-    peopleAtTheTable = [
-      ...people
-        .filter(p => p.table === tableNumber)
-        .map(p => p.name)
-    ]
-  }
-  const removeTableView = () => {
-    isTableShown = false
-    peopleAtTheTable = []
+    return parsedPeople.filter(p => p.tableNumber === `${input}`)
   }
 </script>
 
@@ -94,21 +64,12 @@
     <text x="82" y="62" text-anchor="middle" alignment-baseline="middle">14</text>
   </svg>
 
-  {#if isTableShown}
-    <div on:click={removeTableView} class="table-peeps">
-      <ul> 
-        {#each peopleAtTheTable as p} 
-          <li>{p}</li>
-        {/each}
-      </ul>
-    </div>
-  {/if}
   <h3>Guest List</h3>
-  <input class="your-name" type="text" bind:value={input}>
+  <input placeholder="Brittany... Or Jones... Or El Jefe..." class="your-name" type="text" bind:value={input}>
   <div class="guest-list"> 
-    <h4 on:click={() => sortName()} class="name">Name</h4>
-    <h4 on:click={() => sortTable()} class="table">Table</h4>
-    <h4>#</h4>
+    <h4 class="name">Name</h4>
+    <h4 class="table">Table</h4>
+    <h4>#</h4>    
     {#each filteredPeople(input) as person}
       <p class="p-name">{person.name}</p>  
       <p class="p-table">{person.table}</p>  
@@ -119,6 +80,7 @@
 </section>
 
 <style>
+
   section {
     display: grid;
   }
@@ -175,8 +137,21 @@
     cursor: pointer;
   }
   .your-name {
-    font-size: 2rem;
-    
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--color-main);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    border: 1px solid var(--color-main);
+    outline: 1px solid var(--color-main);
+    transition: all 0.8s;
+  }
+  .your-name:active, 
+  .your-name:focus {
+    box-shadow:
+			3px -3px 20px var(--color-main), 
+			-3px 3px 20px #1beabd88;
   }
   .guest-list {
     display: grid;
@@ -193,6 +168,7 @@
     justify-self: center;
     font-size: 1.9rem;
     padding: 2rem;
+    
   }
 
   h4:hover {
@@ -212,5 +188,14 @@
     justify-self: end;
   }
   
-
+  @media screen and (max-width: 600px) {
+    .p-name,.p-table,.p-table-no {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .p-name,.p-table,.p-table-no {
+      font-size: 0.8rem;
+    }
+  }
 </style>

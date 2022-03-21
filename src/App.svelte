@@ -1,5 +1,6 @@
 <script>
   import bottom from './assets/bottom_greenery.png';
+  import qr from './assets/brit_and_graham_qr.png';
   import top from './assets/greenery.png';
   import MainNav from './lib/MainNav.svelte';
   import OnTap from './lib/OnTap.svelte';
@@ -21,7 +22,7 @@
   <main>
     <h1>Brittany and Graham</h1>
     <p class="tidbit">(They're married)</p>
-    <img src={bottom} alt="Wedding greenery" />
+    <img src={bottom}  alt="Wedding greenery" />
 
     <MainNav/>
   
@@ -45,7 +46,7 @@
       their very own Bridez BoizZzZzZzZZzzz. (Trey, Christian and honorary mention       Bryn)
     </p>
   
-<!--     <img class="flip" src={bottom} alt="Wedding greenery" /> -->
+    <img class="qr" src={qr} alt="QR code to this site" />
 
   </main>
 </Router>
@@ -81,7 +82,10 @@
   img.flip {
     transform: rotate(180deg);
   }
-
+  img.qr {
+    width: 30rem;
+    height: 30rem;
+  }
   h1,h2,h3,h4,h5,h6 {
     font-family: 'DancingScript', cursive;
     font-weight: 400;
@@ -93,6 +97,9 @@
     font-size: 2.8rem;
     line-height: 1.5;
     max-width: 80vw;
+    background-color: #ffffffdd;
+    border-radius: 50px;
+    padding: 1rem 5rem;
   }
 
   h2 {
