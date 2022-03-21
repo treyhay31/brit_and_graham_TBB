@@ -61,7 +61,7 @@ The Pittsburgh cookie table, a western Pennsylvania tradition, is said to have s
 
   p {
     font-size: 1.3rem;
-    text-align: center;
+    text-align: left;
     font-family: "Arial", sans-serif;
     font-weight: 400 !important;
     margin-left: auto;
