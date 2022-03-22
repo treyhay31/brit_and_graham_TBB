@@ -41,9 +41,9 @@
   src: local("DancingScript"),
     url("./assets/DancingScript.woff") format("truetype");
   font-weight: normal;
-    }
+  }
   
-  main {
+  section {
     padding: 5rem 5vw;
     color: var(--color-font);
     max-width: 90vw; 

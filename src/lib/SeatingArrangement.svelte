@@ -248,11 +248,13 @@
   }
   
   @media screen and (max-width: 600px) {
+    h3,h4 { font-size: 1.5rem; }
     .p-name,.p-table,.p-table-no {
       font-size: 1rem;
     }
   }
   @media screen and (max-width: 400px) {
+    h3,h4 { font-size: 1.2rem; }
     .p-name,.p-table,.p-table-no {
       font-size: 0.8rem;
     }

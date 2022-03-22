@@ -11,43 +11,32 @@
 </script>
 
 <Router>
-
-  <nav>
-    <Link to="/MainNav">Home</Link>
-    <Link to="/OnTap">On Tap</Link>
-    <Link to="/OnTheMenu">On The Menu</Link>
-    <Link to="/SeatingArrangement">Seating Arrangement</Link>
-  </nav>
-  
   <main>
-    <h1>Brittany and Graham</h1>
+    <h1>
+      <span>Brittany</span>
+      <span>&</span> 
+      <span>Graham</span>
+    </h1>
     <p class="tidbit">(They're married)</p>
     <img src={bottom}  alt="Wedding greenery" />
 
     <MainNav/>
   
-<!--     <h2>What's on tap?</h2>
-    <OnTap />
-    <img src={bottom} alt="Wedding greenery" />
-  
-    <h2>What's on the menu?</h2>
-    <OnTheMenu />
-    <img src={bottom} alt="Wedding greenery" />
-  
-    <h2>Where do I sit?</h2>
-    <SeatingArrangement />
-    <img src={bottom} alt="Wedding greenery" /> -->
-    
     <img class="flip" src={bottom} alt="Wedding greenery" />
-    <h2>The Boiz</h2>
-    <p>
-      Where does something this unique and creative come from, you ask?
-      Mostly from the bride and groom but the execution is provided by 
-      their very own Bridez BoizZzZzZzZZzzz. (Trey, Christian, and honorary mention       Bryn)
-    </p>
-  
+      
     <img class="qr" src={qr} alt="QR code to this site" />
 
+    <h2>The Boiz</h2>
+    <p class="boiz">
+      Where does something this unique and creative come from, you ask?
+      <br />
+      <br />
+      Mostly from the bride and groom but the execution is provided by 
+      their very own Bridez BoizZzZzZzZZzzz. 
+      <br />
+      <br />
+      (Trey, Christian, and honorary mention... Bryn)
+    </p>
   </main>
 </Router>
 
@@ -101,7 +90,10 @@
     border-radius: 50px;
     padding: 1rem 5rem;
   }
-
+  h1 span {
+    display: block;
+    text-align: center;
+  }
   h2 {
     color: var(--color-main);
     font-size: 2.8rem;
@@ -113,26 +105,24 @@
   }
 
   p {
-    max-width: 14rem;
+    max-width: 60vw;
     margin: 1rem auto;
     line-height: 1.35;
+    font-size: 1.5rem;
+    text-align: center;
   }
-
+  p.boiz {
+    color: white;
+    background: radial-gradient(circle, var(--color-main) 0%, var(--color-main) 90%, transparent 100%);
+    border-radius: 33px;
+    padding: 2rem;
+    font-size: 0.8rem;
+  }
   .tidbit {
     font-size: 0.7rem;
   }
 
   .mainNav {
     text-decoration: none !important;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
   }
 </style>
