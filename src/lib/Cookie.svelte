@@ -10,6 +10,8 @@ The Pittsburgh cookie table, a western Pennsylvania tradition, is said to have s
   </p>
   <br>
   <p>Please enjoy the deliciousness baked lovingly by the family and friends of Brittany and Graham. To-go boxes are provided so you may take some of the tradition home with you!</p>
+
+  <!--   I can't figure out how to center this stupid greenery -->
   <img class="greenery" src={bottom} alt="Wedding greenery" />
 </section>
 

@@ -43,7 +43,7 @@
     <p>
       Where does something this unique and creative come from, you ask?
       Mostly from the bride and groom but the execution is provided by 
-      their very own Bridez BoizZzZzZzZZzzz. (Trey, Christian and honorary mention       Bryn)
+      their very own Bridez BoizZzZzZzZZzzz. (Trey, Christian, and honorary mention       Bryn)
     </p>
   
     <img class="qr" src={qr} alt="QR code to this site" />
@@ -107,6 +107,9 @@
     font-size: 2.8rem;
     line-height: 1.5;
     max-width: 80vw;
+    background-color: #ffffffdd;
+    border-radius: 50px;
+    padding: 1rem 5rem;
   }
 
   p {
