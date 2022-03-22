@@ -48,12 +48,12 @@
 <section>
   <h3>Where am I sitting?</h3>
   <h4>{selected}</h4>
-  <input placeholder="Brittany... Or Jones... Or El Jefe..." class="your-name" type="text" bind:value={input}>
+  <input placeholder="Name..." class="your-name" type="text" bind:value={input}>
   {#if hasInput()}
     <ul in:fade out:fade class="drop-down">
       {#each filteredPeople(input) as person, index}
         <li in:fly="{{ y: 200, duration: 1000, delay: (0 + 100 * index) }}" out:fade on:click="{() => highlightTable(person)}">
-  				{person.name} {" "} @ {" "} '{person.table}' table
+  				{person.name}
   			</li>
       {/each}
   	</ul>
