@@ -12,6 +12,9 @@
 
 <Router>
   <main>
+    <nav>
+      Hello
+    </nav>
     <h1>
       <span>Brittany</span>
       <span>&</span> 
@@ -53,15 +56,25 @@
     url("./assets/DancingScript.woff") format("truetype");
   font-weight: normal;
     }
-  
+
+
   main {
     padding: 5rem 5vw;
     color: var(--color-font);
     max-width: 90vw; 
     display: grid;
     justify-items: center;
+    position: relative;
   }
 
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 10vh;
+    background-color: purple;
+  }
   img {
     height: 4rem;
     width: 14rem;

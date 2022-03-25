@@ -89,7 +89,7 @@
 
   .drink {
     min-width: 10rem;
-    background: linear-gradient(17deg, #5bca5b22, #8ffc8f55);
+    background: linear-gradient(17deg, #5bca5bcc, #8ffc8fdd);
     border-radius: 7px;
     padding: 1.5rem;
     backdrop-filter: blur(15px);

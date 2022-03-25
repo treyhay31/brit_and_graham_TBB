@@ -47,8 +47,9 @@
 
 <section>
   <h3>Where am I sitting?</h3>
-  <h4>{selected}</h4>
-  <input placeholder="Name..." class="your-name" type="text" bind:value={input}>
+  <p class="selected">{selected}</p>
+  <label for="yourName">Enter your name and watch your table glow!</label>
+  <input id="yourName" placeholder="Name..." class="your-name" type="text" bind:value={input}>
   {#if hasInput()}
     <ul in:fade out:fade class="drop-down">
       {#each filteredPeople(input) as person, index}
@@ -101,9 +102,9 @@
 
   <h3>Guest List</h3>
   <div class="guest-list"> 
-    <h4 class="name">Name</h4>
-    <h4 class="table">Table</h4>
-    <h4>#</h4>    
+    <h4 class="guest-list_header">Name</h4>
+    <h4 class="guest-list_header">Table</h4>
+    <h4 class="guest-list_header">#</h4>    
     {#each filteredPeople(input) as person}
       <p on:click={() => highlightTable(person)} class="p-name">{person.name}</p>  
       <p class="p-table">{person.table}</p>  
@@ -128,7 +129,16 @@
     padding: 1rem 2rem;
     max-width: 80vw;
   }
-
+  label {
+    color: var(--color-main);
+    align-self: center;
+    justify-self: center;
+    font-size: 0.8rem;
+    background-color: #ffffffdd;
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+  }
+  
   ul.drop-down {
     color: var(--color-main);
     background-color: #efefefbb;
@@ -197,7 +207,7 @@
     color: var(--color-main);
     border-radius: 50px;
     padding: 1rem 2rem;
-    margin: 1rem 1rem;
+    margin: 0rem 1rem 0.5rem 1rem;
     border: 1px solid var(--color-main);
     outline: 1px solid var(--color-main);
     transition: all 0.8s;
@@ -213,11 +223,16 @@
     grid-template-columns: 5fr 5fr 1fr;
     grid-gap: 0.3rem;
     place-items: center;
-    background: #eeeeee99;
+    background: #eeeeeedd;
     backdrop-filter: blur(12px);
     padding: 1.5rem;
   }
-
+  .guest-list_header {
+    background-color: transparent;
+    background: transparent;
+    border-radius: 0;
+  }
+  
   h4 {
     color: var(--color-main);
     align-self: center;
@@ -226,13 +241,14 @@
     padding: 2rem;
     background-color: #ffffffdd;
     border-radius: 50px;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     max-width: 80vw;
   }
 
   h4:hover {
     cursor: pointer;
   }
+
   li {
     line-height: 3rem;
     color: #ffffff;
