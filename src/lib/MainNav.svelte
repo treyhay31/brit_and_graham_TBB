@@ -25,7 +25,7 @@
   <h2><Link class="mainNav" to="/OnTap">On Tap</Link></h2>
   <h2><Link class="mainNav" to="/OnTheMenu">On The Menu</Link></h2>
   <h2><Link class="mainNav" to="/SeatingArrangement">Seating Arrangement</Link>  </h2>
-  <h2><Link class="mainNav" to="/Cookie">Pittsburg Cookie Tradition</Link></h2>
+  <h2><Link class="mainNav" to="/Cookie">Pittsburgh Cookie Tradition</Link></h2>
 
 </section>
 

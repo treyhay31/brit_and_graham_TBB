@@ -9,26 +9,26 @@
   const drinks = [
     {
       owner: "His",
-      title: "Parker Periwinkle",
+      title: "Good Ol' Parker",
       ingredients: ["Whiskey", "Ginger", "Bitters"],
       image: cocktail,
     },
     {
       owner: "Hers",
-      title: "Maisie Mule",
-      ingredients: ["Vodka", "Gingerbeer", "Lime"],
+      title: "Marvelous Ms. Maisie",
+      ingredients: ["Vodka", "Gingerbeer", "Lime", "Blackberry Simple Syrup"],
       image: cocktail,
     },
     {
       owner: "Wine",
       title: "Red",
-      ingredients: ["Pinot Noir", "Malbec"],
+      ingredients: ["Merlot", "Cabernet Sauvignon"],
       image: wine,
     },
     {
       owner: "Wine",
       title: "White",
-      ingredients: ["Chardonnay", "Pinot Grigio"],
+      ingredients: ["Riesling", "Sauvignon Blanc"],
       image: wine,
     }, 
     {

@@ -35,7 +35,7 @@
       their very own Bridez BoizZzZzZzZZzzz. 
       <br />
       <br />
-      (Trey, Christian, and honorary mention... Bryn)
+      (Trey, Christian, and honorary mention, Bryn)
     </p>
   </main>
 </Router>

@@ -15,6 +15,7 @@
     often celebrated with a reception after the wedding ceremony. 
     However, many Pittsburghers simply could not afford a wedding cake. 
     <br />
+    <br />
     Instead, as legend goes, the mother of the bride, extended family, 
     and closest friends baked cookies from scratch with recipes passed down through several generations. 
     By the time Pittsburgh recovered from the Great Depression, 
