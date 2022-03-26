@@ -36,8 +36,6 @@
       image: food,
     },
   ]
-   console.log(foods.length)
-  console.log("hi")
 </script>
 
 
@@ -72,7 +70,7 @@
 
   .drink {
     min-width: 10rem;
-/*     max-width:80%; */
+    max-width: 70vw;
     background: linear-gradient(17deg, #dbfbdbcc, #8ffc8fdd);
     border-radius: 7px;
     padding: 1.5rem;
@@ -103,13 +101,14 @@
     padding: 0.5rem 0;
     margin: 0;
     text-align: start;
-    justify-self: center;
+    justify-self: start;
   }
 
   li {
-    line-height: 1.3rem;
+    line-height: 1.6rem;
     border-bottom: 1px solid #33333333;
     padding-bottom: 0.2rem;
+    font-size: 1.2rem;
   }
 
   .greenery {
@@ -122,7 +121,6 @@
     font-family: 'DancingScript', cursive;
     font-size: 2.5rem;
     font-weight: 100;
-    line-height: 1rem;
     padding: 0.5rem 0;
     margin: 0;
     grid-column: 1 / -1;
@@ -131,7 +129,6 @@
 
   h4 {
     grid-column: 1 / -1;
-    line-height: 0.2rem;
     padding: 0.8rem 0;
     font-style: italic;
     font-size: 0.88rem;
@@ -141,7 +138,7 @@
     height: 4rem;
     width: 4rem;
     justify-self: start;
-    opacity: 82%;
+    opacity: 44%;
   }
   
   svg {

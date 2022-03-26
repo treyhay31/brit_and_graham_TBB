@@ -1,5 +1,5 @@
 <script>
-    import bottom from './../assets/bottom_greenery.png';
+  import bottom from './../assets/bottom_greenery.png';
 </script>
 
 <section>

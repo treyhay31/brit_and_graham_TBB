@@ -4,25 +4,25 @@
   import OnTheMenu from "./OnTheMenu.svelte";
   import SeatingArrangement from "./SeatingArrangement.svelte";
   import Cookie from "./Cookie.svelte";
-  import drink from '../assets/cocktail.svg';
-  import food from '../assets/cake.svg';
-  import seating from '../assets/seating.svg';
-  import cookie from '../assets/cookie.svg';
+  import CocktailIcon from './nav/CocktailIcon.svelte'
+  import CakeIcon from './nav/CakeIcon.svelte'
+  import SeatingIcon from './nav/SeatingIcon.svelte'
+  import CookieIcon from './nav/CookieIcon.svelte'
   import '../assets/DancingScript.woff';
 </script>
 
 <nav>
-  <Link class="mainNav link drink" to="/OnTap">
-    <img src={drink} alt="on tap" />
+  <Link class="link" to="/OnTap">
+    <CocktailIcon fill="darkgreen" />
   </Link>
-  <Link class="mainNav link food" to="/OnTheMenu">
-    <img src={food} alt="on the menu" />
+  <Link class="link" to="/OnTheMenu">
+    <CakeIcon fill="darkgreen" />
   </Link>
-  <Link class="mainNav link food" to="/SeatingArrangement">
-    <img src={seating} alt="seating arrangement" />
+  <Link class="link" to="/SeatingArrangement">
+    <SeatingIcon fill="darkgreen" />
   </Link>
-  <Link class="mainNav link food" to="/Cookie">
-    <img src={cookie} alt="pittsburg cookie tradition" />
+  <Link class="link" to="/Cookie">
+    <CookieIcon fill="darkgreen" />
   </Link>
 </nav>
 
@@ -60,8 +60,8 @@
   :global(a) {
     background-color: transparent;
   }
-
-  img {
+  
+  svg {
     height: 5vh;
     width: auto;
   }

@@ -262,7 +262,7 @@
     justify-self: start;
   }
   .p-table-no {
-    justify-self: end;
+    justify-self: center;
   }
   
   @media screen and (max-width: 600px) {
