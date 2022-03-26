@@ -116,7 +116,7 @@
     background-color: #ffffffdd;
     border-radius: 50px;
     padding: 1rem 5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
   h1 span {
     display: block;

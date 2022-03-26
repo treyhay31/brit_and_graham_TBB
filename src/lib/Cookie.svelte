@@ -69,6 +69,7 @@
     background-color: #ffffffdd;
     border-radius: 50px;
     padding: 1rem 5rem;
+    margin-top: 2rem;
 /*     max-width: 80vw; */
   }
   h1 span {
