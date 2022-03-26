@@ -9,13 +9,13 @@
   const drinks = [
     {
       owner: "His",
-      title: "Good Ol' Parker",
+      title: "Good Ol' Parker (old fashioned)",
       ingredients: ["Whiskey", "Ginger", "Bitters"],
       image: cocktail,
     },
     {
       owner: "Hers",
-      title: "Marvelous Ms. Maisie",
+      title: "Marvelous Ms. Maisie (blackberry mule)",
       ingredients: ["Vodka", "Gingerbeer", "Lime", "Blackberry Simple Syrup"],
       image: cocktail,
     },
@@ -42,19 +42,7 @@
       title: "Essentials",
       ingredients: ["Water", "Iced Tea", "Coffee"],
       image: drink,
-    }, 
-    // {
-    //   owner: "Food",
-    //   title: "Appetizers On The Move",
-    //   ingredients: ["Chicken Salad", "Pimento Cheese", "Ham & Cheese"],
-    //   image: food,
-    // }, 
-    // {
-    //   owner: "Food",
-    //   title: "Appetizers On The Table",
-    //   ingredients: ["Cheese", "Charcuterie", "Mixed Fruits"],
-    //   image: food,
-    // },
+    }
   ]
 </script>
 
@@ -62,9 +50,9 @@
   {#each drinks as d}
   <div class="drink">
     <h3>{d.owner}</h3>
-    <h4>{d.title}</h4>
-    <img src={d.image} alt="beverage container" />
-    <ul>
+    <h4 class="cardTitle">{d.title}</h4>
+    <img class="cardImage" src={d.image} alt="beverage container" />
+    <ul class="cardIngredients">
       {#each d.ingredients as ingredient}
         <li>{ingredient}</li>
       {/each}
@@ -89,6 +77,7 @@
 
   .drink {
     min-width: 10rem;
+/*     max-width:80%; */
     background: linear-gradient(17deg, #5bca5bcc, #8ffc8fdd);
     border-radius: 7px;
     padding: 1.5rem;
@@ -96,11 +85,17 @@
 
     display: grid;
     grid-gap: 0.4rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     place-items: center;
     place-content: center;
     transition-duration: 0.2s;
+
+    font-weight: 300;
   }
+
+.cardIngredients{
+  font-size: 0.8rem !important;
+ }
 
   .drink:hover, .drink:active {
     cursor: pointer;
@@ -117,9 +112,12 @@
   }
 
   li {
-    line-height: 1.1rem;
+    line-height: 1.3rem;
     border-bottom: 1px solid #33333333;
+    padding-bottom: 0.2rem;
+    
   }
+
 
   h3 {
     font-family: 'Petit Formal Script', cursive;

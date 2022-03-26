@@ -1,4 +1,23 @@
-# TBB Leadership Planning Minutes (LPM)
+t# TBB Leadership Planning Minutes (LPM)
+
+
+## FINAL PRODUCT
+
+- centering needs to be solid (overflow-x: hidden?)
+  - [ ] App
+  - [ ] Main page
+  - [ ] Drinks
+      - double check brittany's list
+  - [ ] Food
+      - double check brittany's list
+  - [ ] Seating
+  - [ ] Pittsuburgh
+- [ ] nav menu 
+    - [x] sticky at the top
+    - [ ] Add navigation
+    - [ ] style
+    - [x] icons (cookie, seat, drink, food)
+    - [ ] Remove the Nav Link underline
 
 
 ## MVP (Minimum Viable Product)

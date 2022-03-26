@@ -85,7 +85,8 @@
   p {
     font-size: 1.3rem;
     text-align: left;
-    font-family: "Arial", sans-serif;
+    font-family: "sans";
+    line-height: 2rem;
     font-weight: 400 !important;
     margin-left: auto;
     margin-right: auto;

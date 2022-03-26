@@ -12,21 +12,32 @@
 
 <Router>
   <main>
-    <nav>
-      Hello
-    </nav>
+    <Route path ="/OnTap">
+     <OnTap />
+    </Route>    
+    <Route path ="/OnTheMenu">
+      <OnTheMenu />
+    </Route>  
+    <Route path ="/SeatingArrangement">
+      <SeatingArrangement />
+    </Route>
+    <Route path ="/Cookie">
+      <Cookie />
+    </Route>
+   
+    <Route path ="/"></Route> 
+    
+    <MainNav/>
     <h1>
       <span>Brittany</span>
       <span>&</span> 
       <span>Graham</span>
     </h1>
     <p class="tidbit">(They're married)</p>
-    <img src={bottom}  alt="Wedding greenery" />
-
-    <MainNav/>
-  
-    <img class="flip" src={bottom} alt="Wedding greenery" />
       
+    <img class="flip" src={bottom} alt="Wedding greenery" />
+    
+    <p class="tidbit">Scan me! (it's a link to this site)</p>
     <img class="qr" src={qr} alt="QR code to this site" />
 
     <h2>The Boiz</h2>
@@ -51,30 +62,30 @@
     --color-font: #333333;
   }
   @font-face {
-  font-family: "DancingScript";
-  src: local("DancingScript"),
-    url("./assets/DancingScript.woff") format("truetype");
-  font-weight: normal;
-    }
+    font-family: "DancingScript";
+    src: local("DancingScript"),
+      url("./assets/DancingScript.woff") format("truetype");
+    font-weight: normal;
+  }
 
+  body { 
+    background-color: #fdf8f9;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+  }
 
   main {
-    padding: 5rem 5vw;
+    padding-top: 5rem;
     color: var(--color-font);
-    max-width: 90vw; 
+    width: 100%;
+/*     max-width: 90vw;  */
     display: grid;
     justify-items: center;
     position: relative;
   }
 
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 120%;
-    height: 10vh;
-    background-color: purple;
-  }
   img {
     height: 4rem;
     width: 14rem;
@@ -85,8 +96,8 @@
     transform: rotate(180deg);
   }
   img.qr {
-    width: 30rem;
-    height: 30rem;
+    width: 85vw;
+    height: auto;
   }
   h1,h2,h3,h4,h5,h6 {
     font-family: 'DancingScript', cursive;

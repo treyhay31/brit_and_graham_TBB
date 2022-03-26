@@ -4,30 +4,27 @@
   import OnTheMenu from "./OnTheMenu.svelte";
   import SeatingArrangement from "./SeatingArrangement.svelte";
   import Cookie from "./Cookie.svelte";
+  import drink from '../assets/cocktail.svg';
+  import food from '../assets/cake.svg';
+  import seating from '../assets/seating.svg';
+  import cookie from '../assets/cookie.svg';
   import '../assets/DancingScript.woff';
 </script>
 
-<section>
-  <Route path ="/OnTap">
-     <OnTap />
-  </Route>    
-  <Route path ="/OnTheMenu">
-    <OnTheMenu />
-  </Route>  
-  <Route path ="/SeatingArrangement">
-    <SeatingArrangement />
-  </Route>
-    <Route path ="/Cookie">
-      <Cookie />
-  </Route>
-  <Route path ="/"></Route>
-
-  <h2><Link class="mainNav" to="/OnTap">On Tap</Link></h2>
-  <h2><Link class="mainNav" to="/OnTheMenu">On The Menu</Link></h2>
-  <h2><Link class="mainNav" to="/SeatingArrangement">Seating Arrangement</Link>  </h2>
-  <h2><Link class="mainNav" to="/Cookie">Pittsburgh Cookie Tradition</Link></h2>
-
-</section>
+<nav>
+  <Link class="mainNav link drink" to="/OnTap">
+    <img src={drink} alt="on tap" />
+  </Link>
+  <Link class="mainNav link food" to="/OnTheMenu">
+    <img src={food} alt="on the menu" />
+  </Link>
+  <Link class="mainNav link food" to="/SeatingArrangement">
+    <img src={seating} alt="seating arrangement" />
+  </Link>
+  <Link class="mainNav link food" to="/Cookie">
+    <img src={cookie} alt="pittsburg cookie tradition" />
+  </Link>
+</nav>
 
 <style>
   :root {
@@ -37,76 +34,35 @@
     --color-font: #333333;
   }
   @font-face {
-  font-family: "DancingScript";
-  src: local("DancingScript"),
-    url("./assets/DancingScript.woff") format("truetype");
-  font-weight: normal;
+    font-family: "DancingScript";
+    src: local("DancingScript"),
+      url("./assets/DancingScript.woff") format("truetype");
+    font-weight: normal;
+  }
+  nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(180deg, #d0bcc0, #fdf8f9);
+    color: var(--color-font);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    place-content: center;
+  }
+  .link > :global(a) {
+    text-decoration: none;
   }
   
-  section {
-    padding: 5rem 5vw;
-    color: var(--color-font);
-    max-width: 90vw; 
-    display: grid;
-    justify-items: center;
+  :global(a) {
+    background-color: transparent;
   }
 
   img {
-    height: 4rem;
-    width: 14rem;
-    margin: 2rem auto;
-  }
-   
-  img.flip {
-    transform: rotate(180deg);
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    font-family: 'DancingScript', cursive;
-    font-weight: 400;
-    font-size: 2rem;
-  }
-  
-  h1 {
-    color: var(--color-main);
-    font-size: 2.8rem;
-    line-height: 1.5;
-    max-width: 80vw;
-  }
-
-  h2 {
-    color: var(--color-main);
-    font-size: 2.8rem;
-    line-height: 1.5;
-    max-width: 80vw;
-    text-align: center;
-    text-decoration: none !important; 
-  }
-
-  p {
-    max-width: 14rem;
-    margin: 1rem auto;
-    line-height: 1.35;
-  }
-
-  .tidbit {
-    font-size: 0.7rem;
-  }
-
-/*   .MainNav > :global(a) {
-      text-decoration: none;
-    }    
-    :global(a) {
-        ...
-    } */
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
+    height: 5vh;
+    width: auto;
   }
 </style>

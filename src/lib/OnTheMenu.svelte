@@ -32,7 +32,7 @@
     {
       owner: "Main Meal",
       title: "Buffet",
-      ingredients: ["Caribbean Jerk Chicken With Apple Chutney", "Cajun Shrimp With Andouille Sausage, mushrooms, green onions, red peppers, topped with Cream Sauce", "Cheese Grits","Mixed Vegetables in Garlic and Olive Oil"],
+      ingredients: ["Caribbean Jerk Chicken", "Cajun Shrimp With Andouille Sausage", "Cheese Grits","Mixed Vegetables in Garlic and Olive Oil"],
       image: food,
     },
   ]
@@ -52,7 +52,7 @@
     <h3>{f.owner}</h3>
     <h4>{f.title}</h4>
     <img src={f.image} alt="beverage container" />
-    <ul>
+    <ul class="cardIngredients">
       {#each f.ingredients as ingredient}
         <li>{ingredient}</li>
       {/each}
@@ -72,18 +72,25 @@
 
   .drink {
     min-width: 10rem;
+/*     max-width:80%; */
     background: linear-gradient(17deg, #5bca5bcc, #8ffc8fdd);
     border-radius: 7px;
     padding: 1.5rem;
     backdrop-filter: blur(15px);
-    white-space: pre-line;
+
     display: grid;
     grid-gap: 0.4rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     place-items: center;
     place-content: center;
     transition-duration: 0.2s;
+
+    font-weight: 300;
   }
+
+.cardIngredients{
+  font-size: 0.8rem !important;
+ }
 
   .drink:hover, .drink:active {
     cursor: pointer;
@@ -100,8 +107,10 @@
   }
 
   li {
-    line-height: 1.1rem;
+    line-height: 1.3rem;
     border-bottom: 1px solid #33333333;
+    padding-bottom: 0.2rem;
+    
   }
 
   .greenery {
@@ -132,6 +141,8 @@
   img {
     height: 4rem;
     width: 4rem;
+    justify-self: start;
+    opacity: 90%;
   }
   
   svg {
