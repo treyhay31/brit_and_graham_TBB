@@ -142,7 +142,7 @@
     height: 4rem;
     width: 4rem;
     justify-self: start;
-    opacity: 90%;
+    opacity: 82%;
   }
   
   svg {
