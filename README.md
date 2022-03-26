@@ -6,9 +6,9 @@ t# TBB Leadership Planning Minutes (LPM)
 - centering needs to be solid (overflow-x: hidden?)
   - [ ] App
   - [ ] Main page
-  - [ ] Drinks
+  - [ ] [Drinks](https://docs.google.com/document/d/1l0sL8u4fUf2YI_NqiMcN60c0gruKor0ogMRsRieuso8/edit)
       - double check brittany's list
-  - [ ] Food
+  - [ ] [Food](https://docs.google.com/document/d/1l0sL8u4fUf2YI_NqiMcN60c0gruKor0ogMRsRieuso8/edit)
       - double check brittany's list
   - [ ] Seating
   - [ ] Pittsuburgh

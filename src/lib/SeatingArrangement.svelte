@@ -14,7 +14,7 @@
   let input = ""
   let tableStrokes = fillArray("grey", 16)
   let tableStrokeWidths = fillArray(1, 16)
-  console.log("tables", tableStrokes, tableStrokeWidths)
+  
   const filteredPeople = (input) => {
     if (input === null || 
         input === undefined || 
@@ -153,7 +153,9 @@
   #selected-text {
     fill: var(--color-main);
   }
-  
+  .selected {
+    text-align: center;
+  }
   svg {
     background-color: #bbbbbbcc;
     width: 100%;

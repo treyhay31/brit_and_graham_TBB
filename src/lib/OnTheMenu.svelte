@@ -73,7 +73,7 @@
   .drink {
     min-width: 10rem;
 /*     max-width:80%; */
-    background: linear-gradient(17deg, #5bca5bcc, #8ffc8fdd);
+    background: linear-gradient(17deg, #dbfbdbcc, #8ffc8fdd);
     border-radius: 7px;
     padding: 1.5rem;
     backdrop-filter: blur(15px);
@@ -110,7 +110,6 @@
     line-height: 1.3rem;
     border-bottom: 1px solid #33333333;
     padding-bottom: 0.2rem;
-    
   }
 
   .greenery {

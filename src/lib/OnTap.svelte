@@ -9,13 +9,13 @@
   const drinks = [
     {
       owner: "His",
-      title: "Good Ol' Parker (old fashioned)",
+      title: "Good Ol' Parker (Old Fashioned)",
       ingredients: ["Whiskey", "Ginger", "Bitters"],
       image: cocktail,
     },
     {
       owner: "Hers",
-      title: "Marvelous Ms. Maisie (blackberry mule)",
+      title: "Marvelous Ms. Maisie (Blackberry Mule)",
       ingredients: ["Vodka", "Gingerbeer", "Lime", "Blackberry Simple Syrup"],
       image: cocktail,
     },
@@ -34,13 +34,31 @@
     {
       owner: "Beer",
       title: "Lager",
-      ingredients: ["Budweiser", "Heineken", "Yuengling"],
+      ingredients: ["Bud Light", "Miller Lite", "Full Nelson", "Yuengling"],
       image: beer,
     }, 
     {
       owner: "Self Serve",
       title: "Essentials",
       ingredients: ["Water", "Iced Tea", "Coffee"],
+      image: drink,
+    },
+    {
+      owner: "Downstairs",
+      title: "Liquor",
+      ingredients: ["Crown Royal", "Absolute", "Tanqueray","Rum"],
+      image: cocktail,
+    },
+    {
+      owner: "Downstairs",
+      title: "Classic Mixers",
+      ingredients: ["Club Soda", "Tonic", "Ginger Beer","Bitters"],
+      image: drink,
+    },
+    {
+      owner: "Downstairs",
+      title: "Sweet Mixers",
+      ingredients: ["Cranberry Juice", "Pineapple Juice","Ginger Ale","Sprite","Coca-Cola","Orange Juice"],
       image: drink,
     }
   ]
@@ -78,7 +96,7 @@
   .drink {
     min-width: 10rem;
 /*     max-width:80%; */
-    background: linear-gradient(17deg, #5bca5bcc, #8ffc8fdd);
+    background: linear-gradient(17deg, #dbfbdbcc, #8ffc8fdd);
     border-radius: 7px;
     padding: 1.5rem;
     backdrop-filter: blur(15px);
@@ -141,6 +159,8 @@
   img {
     height: 4rem;
     width: 4rem;
+    justify-self: start;
+    opacity: 82%;
   }
   
   svg {
